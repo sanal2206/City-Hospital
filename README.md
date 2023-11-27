@@ -8,7 +8,7 @@
  - Department Page : A designated department page gives a brief idea of the different departments in the hospital.
  - About Page :tells about City Hospital's mission and the advanced technology available in the hospital.
  - Admin page : Dediacted admin page with user authentication for changes and manipulation with read and write permission.
- - Staff login : Access to backend staff for checking the patient details and  conatct page details with read only permission
+ - Staff login : Access to backend staff for checking the patient details and conatct page details with read only permission
 
 
  ## Technologies Used
