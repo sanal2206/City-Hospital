@@ -91,6 +91,11 @@ Make sure you have the following installed on your machine:
     python manage.py runserver
     ```
 
+
+## Contact
+
+If you have any questions or concerns, feel free to contact us at [sanalsabu22@gmail.com].
+
    
 
 
