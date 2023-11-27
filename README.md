@@ -1,5 +1,5 @@
 # City-Hospital 
- Welcome to the City Hospital Web Application repository! This web application, built using the Django framework and bootstarp.
+ Welcome to the City Hospital Web Application repository.
 
 ## Features of the application
  - Automated mail confirmation :The user will receive an automated email once the booking is confirmed.
