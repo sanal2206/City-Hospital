@@ -29,6 +29,23 @@ You can access the City Hospital Web Application by following the link below:
 [City Hospital Web Application](https://sanal2206.pythonanywhere.com/about)
 
 
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Python](https://www.python.org/) (version 3.7 or higher)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [virtualenv](https://pypi.org/project/virtualenv/)
+
+  ### Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/sanal2206/city-hospital-web-app.git
+   cd city-hospital-web-app
+
 
   
   
