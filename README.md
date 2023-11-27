@@ -46,98 +46,51 @@ Make sure you have the following installed on your machine:
    git clone https://github.com/sanal2206/city-hospital-web-app.git
    cd city-hospital-web-app
 
+2. **Create a Virtual Environment:**
 
-Certainly! Below is a basic README template for setting up your City Hospital Web Application developed using Django framework with an SQLite database for local machine deployment:
+    ```bash
+    virtualenv venv
+    ```
 
-markdown
-Copy code
-# City Hospital Web Application
+3. **Activate the Virtual Environment:**
+   - On Windows:
 
-Welcome to the City Hospital Web Application repository! This web application, developed using the Django framework, is designed to streamline and enhance the healthcare experience for both patients and hospital staff.
+        ```bash
+        venv\Scripts\activate
+        ```
 
-## Table of Contents
+   - On macOS/Linux:
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-- [Accessing the Application](#accessing-the-application)
-- [Test Credentials](#test-credentials)
-- [Local Development](#local-development)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+        ```bash
+        source venv/bin/activate
+        ```
 
-## Features
+4. **Install Dependencies:**
 
-- **User Authentication:** Secure login and registration for patients and hospital staff.
-- **Appointment Scheduling:** Patients can schedule appointments with their preferred doctors.
-- **Medical Records:** Access and manage patient medical records securely.
-- **Doctor Dashboard:** A dedicated dashboard for doctors to view their appointments and patient information.
-- **Admin Panel:** Manage user accounts, appointments, and system settings.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Technologies Used
+### Running the Application
 
-- Backend: Django, Django Rest Framework
-- Database: SQLite
-- Authentication: JSON Web Tokens (JWT)
-- Frontend: HTML, CSS, JavaScript (Django templates can be used as well)
-- Other tools: Redux (for state management), Axios (for API requests)
+1. **Run Migrations:**
 
-## Getting Started
+    ```bash
+    python manage.py migrate
+    ```
 
-### Prerequisites
+2. **Create a Superuser (Admin):**
 
-Make sure you have the following installed on your machine:
+    ```bash
+    python manage.py createsuperuser
+    ```
 
-- [Python](https://www.python.org/) (version 3.7 or higher)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- [virtualenv](https://pypi.org/project/virtualenv/)
+3. **Run the Development Server:**
 
-### Installation
+    ```bash
+    python manage.py runserver
+    ```
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/city-hospital-web-app.git
-   cd city-hospital-web-app
-Create a Virtual Environment:
-
-bash
- 
-virtualenv venv
-Activate the Virtual Environment:
-
-On Windows:
-bash
- 
-venv\Scripts\activate
-On macOS/Linux:
-bash
- 
-source venv/bin/activate
-Install Dependencies:
-
-bash
- 
-pip install -r requirements.txt
-Running the Application
-Run Migrations:
-
-bash
- 
-python manage.py migrate
-Create a Superuser (Admin):
-
-bash
-
-python manage.py createsuperuser
-Run the Development Server:
-
-bash
-
-python manage.py runserver
    
 
 
