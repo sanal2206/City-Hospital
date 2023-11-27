@@ -13,9 +13,9 @@
 
  ## Technologies Used
  - Backend: Django, Django
- - Frontend:Bootstarp
- - Database-sqLite
- - Host-pythonanywhere
+ - Frontend: Bootstarp
+ - Database: sqLite
+ - Host: pythonanywhere
 
   ## Languages Used
   - Backend: Python
