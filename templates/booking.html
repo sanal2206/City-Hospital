@@ -4,26 +4,49 @@
 Booking
 {% endblock  %}
 {% block content %}
-<h2 class="text-center">Make an Appointment</h2>
-<hr>
-<div class="container w-50 p-3 my-5 bg-black text-center text-white border border-white rounded">
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{ form|crispy }}
-        
-        {% if form.errors %}
-            <div class="alert alert-danger" role="alert">
-                Please correct the errors below:
-                <ul>
-                    {% for error in form.errors %}
-                        <li>{{ error }}</li>
-                    {% endfor %}
-                </ul>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center">Make an Appointment</h2>
+                </div>
+                <div class="card-body">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        
+                        {% if form.errors %}
+                        <div class="alert alert-danger mt-3" role="alert">
+                            Please correct the errors below:
+                            <ul>
+                                {% for field, error_list in form.errors.items %}
+                                    {% for error in error_list %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+                            
+                        </div>
+                    </form>
+                </div>
             </div>
-        {% endif %}
-        
-        <br>
-        <button class="btn btn-primary mb-4" type="submit">Submit</button>
-    </form>
+        </div>
+    </div>
 </div>
+<br>
+<br>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById("booking_date").setAttribute('min', today);
+    });
+</script>
+
 {% endblock content %}

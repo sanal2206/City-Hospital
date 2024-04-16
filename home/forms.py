@@ -1,9 +1,13 @@
 from django import forms
-
+from django.utils import timezone
 
 from.models import Booking
 class DateInput(forms.DateInput):
         input_type='date'
+        def __init__(self, **kwargs):
+          
+          kwargs['attrs'] = {'min': timezone.now().date().isoformat()}
+          super().__init__(**kwargs)
 
 class BookingForm(forms.ModelForm):
    

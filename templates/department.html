@@ -5,10 +5,29 @@ Department
 {% block content %}
 <h2 class=" text-center">Departments</h2><hr>
 {% for d in dept%}
-<div class='mx-auto w-50 bg-success bg-gradient text-center text-white  p-3 my-5 border border-info rounded'>
-    <p class="text-secondary"></p>
-    <h4>{{d.dep_name}}</h4>
-    <p>{{d.dep_description}}</h2>
+
+ 
+
+  
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:  purple; border-radius: 0.5rem;">
+          {{ d.dep_name }}
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body bg-light text-dark" style="border: 1px solid #6C63FF; border-top: 0; border-radius: 0 0 0.5rem 0.5rem;">
+          <p>{{ d.dep_description }}</p>
+        </div>
+      </div>
     </div>
+  </div>
+  
+  
+
+
+
+ 
     {% endfor %}
 {% endblock content %}

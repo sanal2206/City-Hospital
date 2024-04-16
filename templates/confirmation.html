@@ -3,10 +3,16 @@
 Booking Confirmation
 {% endblock  %}
 {% block content %}
-<div class='container text-center'>
-<h3>Booking Confirmation</h3>
-<div class="alert alert-success" role="alert">
-    We have recived your appointment request,our representative will reach you shortly.
-  </div>
+<div class='container text-center mt-5'>
+    <h3 class="mb-4">Booking Confirmation</h3>
+    <div class="alert alert-success shadow-lg" role="alert">
+        <i class="fas fa-check-circle me-2"></i>
+        <span> Thank you for the Booking.</span><br>
+        <span> We have received your appointment request, Our representative will reach you shortly.</span>
+
+        <div class="col-12 col-lg-7 col-xl-12">
+            <img class="img-fluid rounded" loading="lazy" src="static/images/car1.jpg" alt="City Hospital">
+        </div>
+    </div>
 </div>
 {% endblock  %}
