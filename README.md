@@ -26,7 +26,7 @@
 
 You can access the City Hospital Web Application by following the link below:
 
-[City Hospital Web Application](https://sanal2206.pythonanywhere.com/about)
+[City Hospital Web Application](https://sanalsabu.pythonanywhere.com/)
 
 
 ## Getting Started
